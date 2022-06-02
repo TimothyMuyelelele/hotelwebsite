@@ -1,46 +1,75 @@
 body{
-background-color: O#5fffea75; /* light Blue background */
-font-family: Verdana, Geneva, Tahoma, sans-serif; /* Main Website font*/
-font-size: 16px; /*Default website font - size */
-text-align: center;/* Default Text orientation*/ 
+    background-color: #5fffea;/*light Blue background*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/*Main Website font*/
+    font-size: 16px;/*Default website font-size*/
+    text-align: center;/*Default Text Orientation*/
 }
+
 .container{
-width: 80%; /* making website to be boxed* /
-background -color: Owhite; /*White website background*/
-margin: 0 auto; /* Aligning the website center */}
+    width: 80%;/*making website to be boxed*/
+    background-color: white;/*White website background*/
+    margin: 0 auto;/*Aligning the website center*/
+}
 h1.title{
-text-align: left! important;
-color: brown;
-text-transform: uppercase;
-font-size: 40px;
-padding: 10px; 
+    text-align: left !important;
+    color: brown;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 10px;
 }
 h1.title:hover{
-text-decoration : overline;
-color: #a52a2a75;
-transition: ease-in-out 7s;}
-
-/* Navigation Bar*/
+    text-decoration: overline;
+    color: #a52a2a75;
+    transition: ease-in-out .7s;
+}
+/*Navigation Bar */
 .top-menu{
-background-color: brown; /* Assigning brown color */
-overflow: hidden; /*Hiding the text overflows */
+    background-color:brown;/*Assigning brown color*/
+    overflow:hidden;/*Hiding the text overflows*/
 }
 .top-menu ul li{
-list-style-type: none; /* Removing the Unordered list bullets or markers*/
-float: left; /* Align the list items horizontally */
-border-right : 2px solid #5fffea; /*Adding the white border*/
-padding: 5px 10px; /* Adding some space: vertical and hprizontal */
+    list-style-type: none;/*Removing the Unordered list bullets or markers*/
+    float: left;/*Align the list items horizontally*/
+    border-right: 2px solid #5fffea ;/*Adding the white border*/
+    padding: 5px 10px;/*Adding some space:vertical and horizontal*/
 }
-
-.top-menu ul li a{
-text-decoration: none;
-text-transform: uppercase;
-color: #5fffea;
-font-weight: 800;
-font-size: 24px;
+.top-menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #5fffea;
+    font-weight: 800;
+    font-size: 24px;
 }
 .top-menu ul li:hover{
-background-color: #5fffea;}
-.top-menu ul li:hover{
-text-decoration : underline ;
-color:brown;}
+    background-color: #5fffea;
+}
+.top-menu ul li:hover a{
+    text-decoration: underline;
+    color:brown;
+}
+/*Styling the image*/
+.main-img{
+    width:100%;/*makes the image full-width*/
+    height: 50vh;/*defines the height of an image in vertical height units*/
+}
+/*Styling the image inside table*/
+table img {
+    height: 500px;
+    width: 400px;
+}
+table img:hover{
+    opacity:5;/*On hovering the image,blur the image to 0.5*/
+    transform: scale(1.005);/*Increases the width and height of the image by 1.005*/
+    transition:ease-in 2s ;/*Dictates method and time taken or the transformation to occur*/
+}
+/*Credits section*/
+.credits{
+    background-color: brown;
+    padding: 30px;
+    color: white;
+    font-size: 24px;
+}
+.credits:hover{
+    transform:rotate(15deg) ;
+    transition:ease-in-out 10ms   ;
+}
